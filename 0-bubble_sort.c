@@ -21,6 +21,8 @@ void swap_pos(int **array, size_t x, size_t y)
  * bubble_sort - Bubble sort algorithm
  * @array: array of integers
  * @size: size of array
+ *
+ * Description: Prints the array after each swap.
  * Return: void
  */
 

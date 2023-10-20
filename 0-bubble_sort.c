@@ -6,6 +6,7 @@
  * @array: array to be changed
  * @x: index
  * @y: index
+ * Return: void
  */
 void swap_pos(int **array, size_t x, size_t y)
 {

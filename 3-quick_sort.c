@@ -7,7 +7,7 @@
  * @x: index
  * @y: index
  */
-void swap_pos(int **array, int x, int y)
+void swap_pos(int **array, size_t x, size_t y)
 {
 	int tmp;
 

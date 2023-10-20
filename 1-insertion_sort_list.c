@@ -6,12 +6,11 @@
  * @list: pointer to the header of doubly linked list
  * Return: void
  */
-
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *temp, *current;
+	listint_t *current, *temp;
 
-	if (!*list || !(*list)->next)
+	if (!list)
 		return;
 
 	for (current = *list; current; current = current->next)
@@ -39,5 +38,4 @@ void insertion_sort_list(listint_t **list)
 			print_list(*list);
 		}
 	}
-
 }

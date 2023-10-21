@@ -73,22 +73,20 @@ void swap_nodes_behind(listint_t **list, listint_t **end, listint_t **node)
  */
 void cocktail_sort_list(listint_t **list)
 {
-	listint_t *current, *end, *beg;
+	listint_t *current, *end;
 	bool sorted = false;
 
 	if (!list || !(*list) || !(*list)->next)
 		return;
 
-	current = *list;
-	while (current->next)
-		current = current->next;
+	end = *list;
+	while (end->next)
+		end = end->next;
 
-	end = current;
-	beg = *list;
 	while (sorted == false)
 	{
 		sorted = true;
-		current = beg;
+		current = *list;
 		while (current != end)
 		{
 			if (current->n > current->next->n)

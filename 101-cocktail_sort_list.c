@@ -76,7 +76,7 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *current, *end, *beg;
 	bool sorted = false;
 
-	if (!list)
+	if (!list || !(*list) || !(*list)->next)
 		return;
 
 	current = *list;

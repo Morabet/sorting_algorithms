@@ -35,7 +35,7 @@ void shell_sort(int *array, size_t size)
 	/*calculating the largset interval*/
 	val = 1;
 	while (val < n / 3)
-		val = n * 3 + 1;
+		val = val * 3 + 1;
 
 	/*decreasing the interval each iteration*/
 	for (gap = val; gap > 0; gap /= 3)

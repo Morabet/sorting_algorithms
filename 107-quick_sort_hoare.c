@@ -21,6 +21,7 @@ void swap_pos(int **array, size_t x, size_t y)
  * @array: array of integers
  * @lower: lower bound
  * @hight: upper bound
+ * @size: size of array
  * Return: pi
  */
 
@@ -53,6 +54,7 @@ int partition(int **array, int lower, int hight, size_t size)
  * @array: array of integers
  * @lower: lower bound
  * @hight: upper bound
+ * @size: size of array
  */
 
 void sort_quick(int **array, int lower, int hight, size_t size)

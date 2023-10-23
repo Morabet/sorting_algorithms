@@ -19,7 +19,7 @@ void count_sort(int *array, int place, int size)
 		if ((array[i] / place) % 10 > max)
 			max = array[i];
 	}
-	output = malloc(sizeof(int) * (size + 1));
+	output = malloc(sizeof(int) * size);
 	if (!output)
 		return;
 	count = malloc(sizeof(int) * (max + 1));
@@ -29,7 +29,7 @@ void count_sort(int *array, int place, int size)
 		return;
 	}
 	/*initialize the count with '0'*/
-	for (i = 0; i < max; i++)
+	for (i = 0; i <= max; i++)
 		count[i] = 0;
 	/*calculate the count of the elements*/
 	for (i = 0; i < size; i++)
